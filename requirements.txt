@@ -1,0 +1,15 @@
+backoff==2.2.1
+branca==0.7.2
+certifi==2024.2.2
+charset-normalizer==3.3.2
+colorama==0.4.6
+folium==0.16.0
+idna==3.7
+Jinja2==3.1.4
+MarkupSafe==2.1.5
+numpy==1.26.4
+opencage==2.4.0
+phonenumbers==8.13.37
+requests==2.31.0
+urllib3==2.2.1
+xyzservices==2024.4.0
