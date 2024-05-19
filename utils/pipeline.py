@@ -24,11 +24,11 @@ class Pipeline:
         self.get_approx_coordinates()
         self.draw_map(phone_number)
 
-    def _clean_phone_number(phone_number: str):
+    def _clean_phone_number(self, phone_number: str):
         cleaned = ''.join(char for part in phone_number for char in part if char.isdigit() or char == '+')
         return cleaned or None
     
-    def process_number(number):
+    def process_number(self, number):
         try:
             global location
             # Parse the phone number. See this as extracting relevant information from the Phone number.
@@ -57,7 +57,7 @@ class Pipeline:
                 " or check your internet connection.")
             sys.exit()
 
-    def get_approx_coordinates():
+    def get_approx_coordinates(self):
         # Import the OpenCageGeocode class from the opencage.geocoder module
         from opencage.geocoder import OpenCageGeocode
         global coder, latitude, longitude
